@@ -1,0 +1,281 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .container {
+    max-width: 1140px;
+    width: 96%;
+    display: block;
+    margin: 0 auto;
+} */
+
+
+
+body {
+    background: #f5f4f9;
+}
+
+.fmenu {
+    display: flex;
+}
+
+.left_bar {
+    box-shadow: 0 0 6px rgb(195, 192, 192);
+}
+
+
+.left_bar a img {
+    width: 30px;
+}
+
+.mainwearf {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_bar {
+    min-height: 100vh;
+    width: 50px;
+    background: #ffffff;
+}
+
+.searchBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 6px rgb(195, 192, 192);
+}
+
+.searchBar form input[type="submit"] {
+    background: url(magnifying-glass-solid.svg) no-repeat center;
+    background-size: 55% 55%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+}
+
+.searchBar form input[type="text"] {
+    outline: none;
+    border: none;
+}
+
+.searchBar_links {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    background: #b9b8c0;
+    width: 200px;
+    min-height: 100vh;
+    transition: all 0.3s ease-in;
+}
+
+.searchBar ul {
+    list-style-type: none;
+    flex-direction: column;
+    margin-right: 5px;
+}
+
+.searchBar ul li {
+    display: block;
+    margin-bottom: 8px;
+    background: #fff;
+    padding: 2px 0;
+    border-radius: 30px;
+    box-shadow: 0 0 4px rgb(3, 3, 3);
+}
+
+.searchBar ul li a {
+    color: #000;
+    margin: 0 6px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.searchBar ul li a img {
+    width: 25px;
+    border-radius: 50%;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.searchBar ul li a span {
+    margin-left: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.dbwearframe {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+
+.dbitems {
+    min-height: 50px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgb(195, 192, 192);
+
+}
+
+.admindetails {
+    grid-column: 1 / -1;
+}
+
+.orders {
+    grid-column: 1 / -1;
+}
+
+.sels {
+    grid-column: 1 / -1;
+}
+
+.totalrevenue {
+    grid-column: 1 / -1;
+}
+
+.payments {
+    grid-column: 1 / -1;
+}
+
+.revenue {
+    grid-column: 1 / -1;
+}
+
+.pfreport {
+    grid-column: 1 / -1;
+}
+
+.statistics {
+    grid-column: 1 / -1;
+}
+
+.sdetails {
+    grid-column: 1 / -1;
+}
+
+.transitions {
+    grid-column: 1 / -1;
+}
+
+.timeline {
+    grid-column: 1 / -1;
+}
+
+.browser {
+    grid-column: 1 / -1;
+}
+
+.fa-bars,
+.fa-xmark {
+    font-size: 23px;
+    margin-top: 3.5px;
+    cursor: pointer;
+}
+
+.fa-bars {
+    margin-right: 10px;
+}
+
+.fa-xmark {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+@media screen and (min-width:768px) {
+    .searchBar_links {
+        right: 0px;
+    }
+
+    .searchBar ul li {
+        margin-bottom: 0;
+        background: none;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .searchBar ul li a span {
+        display: none;
+    }
+
+    .fa-xmark,
+    .fa-bars {
+        display: none !important;
+    }
+
+    .searchBar_links {
+        position: relative;
+        top: 0;
+        right: 0;
+        background: none;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .searchBar ul {
+        flex-direction: row;
+    }
+
+    .searchBar ul li {
+        display: inline-block;
+    }
+
+    .searchBar {
+        width: 95%;
+    }
+
+    .admindetails {
+        grid-column: 1 / 9;
+    }
+
+    .orders {
+        grid-column: 9 / 11;
+    }
+
+    .sels {
+        grid-column: 11 / -1;
+    }
+
+    .totalrevenue {
+        grid-column: 1 / 9;
+        grid-row: 2 / 4;
+    }
+
+    .payments {
+        grid-column: 9 / 11;
+    }
+
+    .revenue {
+        grid-column: 11 / -1;
+    }
+
+    .pfreport {
+        grid-column: 9 / -1;
+    }
+
+    .statistics {
+        grid-column: 1 / 5;
+    }
+
+    .sdetails {
+        grid-column: 5 / 9;
+    }
+
+    .transitions {
+        grid-column: 9 / -1;
+    }
+
+    .timeline {
+        grid-column: 1 / 7;
+    }
+
+    .browser {
+        grid-column: 7 / -1;
+    }
+}
